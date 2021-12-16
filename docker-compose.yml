@@ -2,9 +2,8 @@ services:
   frontend_react_with_rest:
     build:
       context: ./frontend_react_with_rest,
-      "args": [
-        "BACKEND_API_URL=${BACKEND_API_URL}"
-      ]
+      args:
+      - BACKEND_API_URL=${BACKEND_API_URL}
     environment:
       BACKEND_API_URL: ${BACKEND_API_URL}
       PORT: 80
